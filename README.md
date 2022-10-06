@@ -1,2 +1,11 @@
-# react-memory-game
-Create a simple react memory game that allows user to flip the cards to find matching pairs
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React Memory Game</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
