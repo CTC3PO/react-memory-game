@@ -2,7 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import SingleCard from "./components/SingleCard";
 
-//card images sources/ array
+//Card images sources, initial property matched is set to false
 const cardImages = [
   { src: "/img/helmet-1.png", matched: false },
   { src: "/img/potion-1.png", matched: false },
@@ -20,7 +20,7 @@ export default function App() {
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
 
-  //function to shuffle cards and set the cards as shuffledCards
+  //create function to shuffle cards and set the cards as shuffledCards
   const shuffleCards = () => {
     //array of 12 cards by spreading out 2x the cardImages array above
     const shuffledCards = [...cardImages, ...cardImages]
